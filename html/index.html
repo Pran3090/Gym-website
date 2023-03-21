@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetroBoomin Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Playfair Display', serif;
+        color: white;
+        margin: opx;
+        padding: 0px;
+        background: url('/img/gymguy.jpg');
+    }
+
+    .left {
+        position: absolute;
+        left: 42px;
+        top: 25px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 162px;
+        filter: invert(5%);
+        border-radius: 35px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 6px;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .mid {
+        display: block;
+        width: 667px;
+        margin: 31px auto;
+        /* border: 2px solid yellow; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 32px;
+        top: 46px;
+        display: inline-block;
+        /* border: 2px solid green; */
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: #999999;
+    }
+
+    .btn {
+        font-family: 'Playfair Display', serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 5px 7px;
+        border: 2px solid#e4e4e4;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(77, 72, 72);
+    }
+
+    .container {
+        border: 2px solid;
+        margin: 62px 32px;
+        padding: 47px 89px;
+        width: 148px;
+        border-radius: 20px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 143px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 6px;
+        border-radius: 10px;
+    }
+
+    .container .btn {
+        margin: 11px auto;
+        display: block;
+        width: 170px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="/img/db.jpg" alt="">
+            <div>MetroBoomin Fitness</div>
+        </div>
+        <!-- mid box for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="" class="active"> Home</a></li>
+                <li> <a href=""> About Us</a></li>
+                <li> <a href=""> Workout Plan</a></li>
+                <li> <a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of the millenium</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
